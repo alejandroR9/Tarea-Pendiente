@@ -16,7 +16,7 @@ namespace Libreria
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Registrar_Libro());
+            Application.Run(new importacion());
         }
     }
 }
