@@ -94,6 +94,10 @@ namespace Libreria
 
         }
 
+        private void Registrar_Libro_Load(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }

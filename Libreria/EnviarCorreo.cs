@@ -27,6 +27,25 @@ namespace Libreria
             mmsg.Bcc.Add(txtboc.Text);
             mmsg.Body = txtmensaje.Text;
             mmsg.BodyEncoding = System.Text.Encoding.UTF8;
+            mmsg.IsBodyHtml = true;
+            mmsg.From = new System.Net.Mail.MailAddress("howtorock@gmail.com");
+            System.Net.Mail.SmtpClient cliente = new System.Net.Mail.();
+            cliente.Credentials = new System.Net.NetworkCredential("howtorock@gmail.com","alejandro123456789");
+            cliente.Port = 587;
+            cliente.EnableSsl = true;
+            cliente.Host = "sntp.gmail.com";//mail.dominio.com
+
+            try
+            {
+                cliente.Send(mmsg);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error al enviar");
+
+            }
+
+
 
 
 

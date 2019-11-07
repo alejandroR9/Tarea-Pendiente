@@ -344,6 +344,7 @@
             this.Controls.Add(this.btnagregar);
             this.Name = "Registrar_Libro";
             this.Text = "Registrar_Libro";
+            this.Load += new System.EventHandler(this.Registrar_Libro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
