@@ -16,7 +16,7 @@ namespace Libreria
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EnviarCorreo());
+            Application.Run(new correo());
         }
     }
 }
